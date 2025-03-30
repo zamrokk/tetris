@@ -1,0 +1,53 @@
+{
+  "name": "tetris",
+  "version": "0.1.0",
+  "description": "Mon application est un Tetris identique à celui de l'ancienne Gameboy d'origine. codé en CSS, TS et HTML.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.{ts,tsx,css,html}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zamrokk/tetris.git"
+  },
+  "keywords": [
+    "tetris",
+    "gameboy",
+    "typescript",
+    "game"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/zamrokk/tetris/issues"
+  },
+  "homepage": "https://github.com/zamrokk/tetris#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.14",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.23.0",
+    "eslint-config-prettier": "^10.1.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.5.3",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.3"
+  },
+  "dependencies": {
+    "@types/react": "^19.0.12",
+    "@types/react-dom": "^19.0.4",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

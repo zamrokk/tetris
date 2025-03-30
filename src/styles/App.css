@@ -1,0 +1,102 @@
+/* Styles généraux */
+body {
+  background-color: #e0e0e0;
+  font-family: monospace;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Style GameBoy */
+.gameboy {
+  background-color: #c0c0c0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gameboy h1 {
+  color: #0F380F;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.screen-container {
+  background-color: #9BBC0F;
+  border: 5px solid #0F380F;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible; /* Assure que rien n'est coupé */
+}
+
+/* Style spécifique pour le canvas */
+canvas {
+  display: block;
+  margin: 15px;
+  border: 2px solid #0F380F;
+  box-shadow: 0 0 10px rgba(15, 56, 15, 0.3);
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #0F380F;
+}
+
+.instructions {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.instructions p {
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .gameboy {
+    padding: 10px;
+    max-width: 95%;
+  }
+  
+  .screen-container {
+    padding: 20px;
+  }
+  
+  canvas {
+    width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+}

@@ -1,0 +1,38 @@
+:root {
+  --gameboy-color: #8B956D;
+  --screen-color: #9BBC0F;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#game-container {
+  display: flex;
+  justify-content: center;
+}
+
+#game-boy {
+  background-color: var(--gameboy-color);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#screen {
+  background-color: var(--screen-color);
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#tetris-canvas {
+  display: block;
+  background-color: var(--screen-color);
+}
